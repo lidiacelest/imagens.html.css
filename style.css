@@ -1,0 +1,15 @@
+img {
+    max-width: 500px; 
+    height: auto; 
+    transition: 0.3s ease-in-out; 
+}
+
+img:hover {
+    transform: scale(1.1); 
+}
+.galeria img {
+    width: 200%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #0677e11a;
+}

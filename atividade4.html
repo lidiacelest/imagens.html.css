@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html> 
+<head>
+    <title>Atividade 4</title>
+    <style>
+               * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Times New Roman';
+            background-color: hsl(195, 60%, 47%);
+            padding: 20px;
+        }
+        .galeria-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 50px;
+            max-width: 500px;
+            margin-right: 30px;
+        }
+        .galeria img {
+            width: 300%;
+            height: 180;
+            object-fit: cover;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px #0677e11a;
+        }
+        .texto {
+            max-width: 500px;
+            font-family: "georgia",serif;
+            font-size: 15px;
+            color: #f3efefea;
+            text-align: justify;
+            line-height: 1.2;
+        }
+        @media (max-widht:768px) {
+            .galeria { 
+                grid-template-columns: repeat(2, 1rf);
+            }
+        }
+        @media (max-width:480px ) {
+            .galeria {
+                grid-template-columns: 1fr; 
+            }
+        }
+            .galeria img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <h4>Criando uma Galeria Responsiva</h4>
+    <div class="galeria-container">
+        <div class=" galeria" >
+        <img src="futebol.jpg" alt="Imagem 1">
+        <img src="boxe.jpg" alt="Imagem 2">
+        <img src="natação.jpg" alt="Imagem 3">
+        <img src="handebol.jpg" alt="Imagem 4">
+        <img src="jiujtsu.jpg" alt="Imagem 5">
+        <img src="basqutebol.jpg" alt="Imagem 6">
+        </div>
+
+    <div class=" texto">
+        <h1>Historia do esporte</h1>
+        <p> A origem do esporte remonta aos tempos antigos, quando os seres humanos começaram a 
+            competir entre si em atividades físicas. Os primeiros registros de esportes datam de cerca 
+            de 3.000 a.C., na antiga Mesopotâmia,
+             onde foram encontrados artefatos que indicam a prática de corridas e lutas </p>
+    </div>
+    </div>
+
+</body>
+</html>
